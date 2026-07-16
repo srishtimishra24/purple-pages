@@ -65,7 +65,20 @@ h2 {
 
 .poem {
     white-space: pre-line;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
+    line-height: 2.3;
+    max-width: 700px;
+    color: #2f2f2f;
+}
+.intro {
+    margin-top: 40px;
+    color: #666;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+section {
+    margin-bottom: 140px;
 }
 
 hr {
