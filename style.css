@@ -36,12 +36,24 @@ header {
     margin-bottom: 25px;
 }
 
-h1 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: clamp(5rem, 10vw, 7rem);
-    font-weight: 600;
-    margin: 0;
-    letter-spacing: .02em;
+h1{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:clamp(5rem,10vw,7rem);
+
+font-weight:600;
+
+margin:0;
+
+letter-spacing:.04em;
+
+color:#432f63;
+
+text-shadow:
+
+0 0 25px rgba(126,87,194,.08);
+
 }
 
 .subtitle {
@@ -99,9 +111,10 @@ section {
 
 h2 {
     font-family: "Cormorant Garamond", serif;
-    font-size: 3rem;
+    font-size: 3.3rem;
     font-weight: 600;
     margin-bottom: 10px;
+    color: #2d2340;
 }
 
 .date {
