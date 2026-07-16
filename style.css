@@ -8,7 +8,12 @@ html {
 
 body {
     margin: 0;
-    background: #f8f6f2;
+    background: linear-gradient(
+    180deg,
+    #fcfaff 0%,
+    #f7f2fc 40%,
+    #f5effa 100%
+);
     color: #222;
     font-family: "Lora", serif;
     line-height: 2;
@@ -146,4 +151,125 @@ footer {
     .poem {
         font-size: 1.05rem;
     }
+}
+.hero {
+    position: relative;
+    overflow: hidden;
+    padding-top: 60px;
+}
+.stars {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.stars span {
+    position: absolute;
+    color: rgba(126,87,194,.35);
+    animation: float 8s ease-in-out infinite;
+}
+.stars span:nth-child(1){
+left:15%;
+top:20%;
+font-size:14px;
+animation-delay:0s;
+}
+
+.stars span:nth-child(2){
+left:80%;
+top:10%;
+font-size:18px;
+animation-delay:2s;
+}
+
+.stars span:nth-child(3){
+left:65%;
+top:55%;
+font-size:12px;
+animation-delay:4s;
+}
+
+.stars span:nth-child(4){
+left:25%;
+top:70%;
+font-size:16px;
+animation-delay:6s;
+}
+
+.stars span:nth-child(5){
+left:90%;
+top:40%;
+font-size:14px;
+animation-delay:3s;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0px);
+opacity:.2;
+}
+
+50%{
+transform:translateY(-10px);
+opacity:.6;
+}
+
+100%{
+transform:translateY(0px);
+opacity:.2;
+}
+
+}
+.shooting-star{
+
+position:fixed;
+
+top:120px;
+
+left:-100px;
+
+width:120px;
+
+height:2px;
+
+background:linear-gradient(
+90deg,
+white,
+#b388ff,
+transparent
+);
+
+transform:rotate(-20deg);
+
+animation:shoot 2s ease forwards;
+
+pointer-events:none;
+
+z-index:999;
+
+}
+@keyframes shoot{
+
+0%{
+
+transform:
+translateX(0)
+rotate(-20deg);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:
+translateX(160vw)
+translateY(120px)
+rotate(-20deg);
+
+opacity:0;
+
+}
+
 }
