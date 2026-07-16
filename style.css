@@ -2,91 +2,148 @@ html {
     scroll-behavior: smooth;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    background: #F8F6F2;
+    background: #f8f6f2;
     color: #222;
     font-family: "Lora", serif;
     line-height: 2;
 }
 
 .container {
-    width: min(900px, 90%);
+    width: min(850px, 92%);
     margin: auto;
-    padding: 80px 0;
+    padding: 90px 0;
 }
 
 header {
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 120px;
+}
+
+.star {
+    color: #7e57c2;
+    font-size: 1rem;
+    margin-bottom: 25px;
 }
 
 h1 {
     font-family: "Cormorant Garamond", serif;
-    font-size: 5rem;
+    font-size: clamp(5rem, 10vw, 7rem);
     font-weight: 600;
-    margin-bottom: 20px;
+    margin: 0;
+    letter-spacing: .02em;
 }
 
 .subtitle {
-    font-size: 1.2rem;
-    color: #666;
+    margin-top: 35px;
+    color: #555;
+    font-size: 1.3rem;
 }
 
-h2 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 2.4rem;
-    margin-top: 70px;
+.intro {
+    margin-top: 60px;
+    color: #777;
+    font-size: 1.05rem;
+    line-height: 2.1;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd6cf;
+    margin: 90px 0;
+}
+
+.contents {
+    text-align: center;
+}
+
+.contents h2 {
+    margin-bottom: 45px;
 }
 
 .contents ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .contents li {
-    margin: 18px 0;
+    margin: 22px 0;
 }
 
 .contents a {
-    text-decoration: none;
     color: #222;
-    transition: .25s;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: .3s ease;
 }
 
 .contents a:hover {
-    color: #7E57C2;
+    color: #7e57c2;
+    letter-spacing: .03em;
+}
+
+section {
+    margin-bottom: 160px;
+}
+
+h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .date {
     color: #888;
     font-style: italic;
+    margin-bottom: 60px;
 }
 
 .poem {
     white-space: pre-line;
     font-size: 1.15rem;
     line-height: 2.3;
-    max-width: 700px;
-    color: #2f2f2f;
+    max-width: 720px;
 }
-.intro {
-    margin-top: 40px;
-    color: #666;
-    font-size: 1rem;
+
+footer {
+    text-align: center;
+    color: #777;
+    margin-top: 180px;
+    padding-bottom: 60px;
     line-height: 2;
 }
 
-section {
-    margin-bottom: 140px;
-}
-
-hr {
-    border: none;
-    border-top: 1px solid #ddd;
-    margin: 60px 0;
-}
-
 ::selection {
-    background: rgba(126, 87, 194, .2);
+    background: rgba(126, 87, 194, .18);
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 90%;
+        padding: 70px 0;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .poem {
+        font-size: 1.05rem;
+    }
 }
